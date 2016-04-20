@@ -31,6 +31,7 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.CircleBitmapDisplayer;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
@@ -87,6 +88,8 @@ public class ImageListFragment extends AbsListViewBaseFragment {
 					.showImageOnFail(R.drawable.ic_error)
 					.cacheInMemory(true)
 					.cacheOnDisk(true)
+					.bitmapConfig(Bitmap.Config.RGB_565)
+					.imageScaleType(ImageScaleType.IN_SAMPLE_INT)
 					.considerExifParams(true)
 					.displayer(new CircleBitmapDisplayer(Color.WHITE, 5))
 					.build();
