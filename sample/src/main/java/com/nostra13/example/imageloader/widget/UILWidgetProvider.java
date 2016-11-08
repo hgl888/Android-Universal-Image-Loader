@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.nostra13.example.universalimageloader.widget;
+package com.nostra13.example.imageloader.widget;
 
-import static com.nostra13.example.universalimageloader.Constants.IMAGES;
+import static com.nostra13.example.imageloader.Constants.IMAGES;
 
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -24,7 +24,7 @@ import android.graphics.Bitmap;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import com.nostra13.example.universalimageloader.UILApplication;
+import com.nostra13.example.imageloader.UILApplication;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
